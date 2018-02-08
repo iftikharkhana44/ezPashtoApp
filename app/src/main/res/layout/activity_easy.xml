@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.finalyearproject.learnpashto.EasyActivity">
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/splashscreenbackground"
+android:orientation="vertical"
+android:gravity="center"
+tools:context="com.finalyearproject.learnpashto.EasyActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        style="@style/IntermediateTitleStyle"
+        android:text="Easy"/>
+
+<TextView
+    android:id="@+id/Numbers"
+    style="@style/CategoryStyle"
+    android:background="@color/category_numbers"
+    android:text="@string/number_screen_name" />
+
+<TextView
+    android:id="@+id/Colours"
+    style="@style/CategoryStyle"
+    android:background="@color/category_colours"
+    android:text="@string/colours_screen_name"/>
+
+<TextView
+    android:id="@+id/Days"
+    style="@style/CategoryStyle"
+    android:background="@color/category_days"
+    android:text="@string/days_screen_name" />
+
+<TextView
+    android:id="@+id/Fruit_Vegetable"
+    style="@style/CategoryStyle"
+    android:background="@color/category_fruit_vegetable"
+    android:text="@string/fruit_vegetable_screen_name" />
+
+</LinearLayout>

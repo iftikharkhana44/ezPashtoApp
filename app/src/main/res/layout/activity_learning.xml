@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.finalyearproject.learnpashto.LearningActivity"
     android:orientation="vertical"
-    android:background="@color/background"
+    android:background="@drawable/splashscreenbackground"
     android:gravity="center">
 
     <LinearLayout

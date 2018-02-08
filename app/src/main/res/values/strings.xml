@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">LearnPashto</string>
+
+    <!-- Title for Number page -->
+    <string name="number_screen_name">Numbers</string>
+
+    <!-- Title for Colours page -->
+    <string name="colours_screen_name">Colours</string>
+
+    <!--Title for Days page -->
+    <string name="days_screen_name">Days</string>
+
+    <!--Title for Fruit and Vegetable page -->
+    <string name="fruit_vegetable_screen_name">Fruit and Vegetable</string>
+
+    <!--Title for Animals page -->
+    <string name="animals_screen_name">Animals</string>
+
+    <!--Title for School Supplies page -->
+    <string name="school_supplies_screen_name">School Supplies</string>
+
+    <!--Title for Transportation page -->
+    <string name="transportation_screen_name">Transportation</string>
+
+    <!--Title for Body parts page -->
+    <string name="body_parts_screen_name">Body Parts</string>
+
+    <!--Title for Music parts page -->
+    <string name="music_screen_name">Music Instruments</string>
+
+    <!--Title for Months page -->
+    <string name="months_screen_name">Months</string>
+
+    <!--Title for Clothes page -->
+    <string name="clothes_screen_name">Clothes</string>
+
+    <!--Title for Phrases page -->
+    <string name="phrases_screen_name">Phrases</string>
+
+    <!--Title for Vocabulary page -->
+    <string name="vocabulary_screen_name">Vocabulary</string>
+
+    <!--Title for Family page -->
+    <string name="family_screen_name">Family</string>
+
+    <!--Title for Conversations page -->
+    <string name="conversations_screen_name">Conversations</string>
+
+    <!--Title for Hard words page -->
+    <string name="hard_words_screen_name">Hard words</string>
 </resources>

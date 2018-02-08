@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.finalyearproject.learnpashto.HardActivity">
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/splashscreenbackground"
+android:orientation="vertical"
+android:gravity="center"
+tools:context="com.finalyearproject.learnpashto.HardActivity">
 
-</android.support.constraint.ConstraintLayout>
+<TextView
+    style="@style/IntermediateTitleStyle"
+    android:text="Hard" />
+
+<TextView
+    android:id="@+id/Music"
+    style="@style/CategoryStyle"
+    android:background="@color/category_music"
+    android:text="@string/music_screen_name"/>
+
+<TextView
+    android:id="@+id/Months"
+    style="@style/CategoryStyle"
+    android:background="@color/category_months"
+    android:text="@string/months_screen_name"/>
+
+<TextView
+    android:id="@+id/Clothes"
+    style="@style/CategoryStyle"
+    android:background="@color/category_clothes"
+    android:text="@string/clothes_screen_name"/>
+
+<TextView
+    android:id="@+id/Phrases"
+    style="@style/CategoryStyle"
+    android:background="@color/category_phrases"
+    android:text="@string/phrases_screen_name"/>
+
+</LinearLayout>

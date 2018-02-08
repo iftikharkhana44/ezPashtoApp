@@ -18,4 +18,52 @@
     <color name="textLightDisabled">#80FFFFFF</color> <!--80 for %50 opacity-->
     <color name="textLightDisabledDEPRECATED">#4CFFFFFF</color> <!--4C for %30 opacity-->
 
+
+    <!-- Background color for the numbers category -->
+    <color name="category_numbers">#FD8E09</color>
+
+    <!-- Background color for the family members category -->
+    <color name="category_colours">#8800A0</color>
+
+    <!-- Background color for the colors category -->
+    <color name="category_days">#379237</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="category_fruit_vegetable">#1464f6</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="category_animal">#e61610</color>
+
+    <!-- Background color for the family members category -->
+    <color name="category_school_supplies">#1bc0ea</color>
+
+    <!-- Background color for the colors category -->
+    <color name="category_transportation">#f4eb49</color>
+
+    <!-- Background color for the body parts category -->
+    <color name="category_body_parts">#ff5d55</color>
+
+    <!-- Background color for the music category -->
+    <color name="category_music">#9c29b7</color>
+
+    <!-- Background color for the months category -->
+    <color name="category_months">#355723</color>
+
+    <!-- Background color for the clothes category -->
+    <color name="category_clothes">#3b1d8f</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="category_phrases">#ff3823</color>
+
+    <!-- Background color for the Vocabulary category -->
+    <color name="category_vocabulary">#ffd783</color>
+
+    <!-- Background color for the Family category -->
+    <color name="category_family">#b70f0a</color>
+
+    <!-- Background color for the Conversation category -->
+    <color name="category_conversation">#4c7a34</color>
+
+    <!-- Background color for the Hard words category -->
+    <color name="category_hard_words">#d757f6</color>
 </resources>

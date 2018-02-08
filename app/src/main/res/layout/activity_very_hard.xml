@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.finalyearproject.learnpashto.veryHardActivity">
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/splashscreenbackground"
+android:orientation="vertical"
+android:gravity="center"
+tools:context="com.finalyearproject.learnpashto.veryHardActivity">
 
-</android.support.constraint.ConstraintLayout>
+<TextView
+    style="@style/IntermediateTitleStyle"
+    android:text="Very Hard" />
+
+<TextView
+    android:id="@+id/Vocabulary"
+    style="@style/CategoryStyle"
+    android:background="@color/category_vocabulary"
+    android:text="@string/vocabulary_screen_name"/>
+
+<TextView
+    android:id="@+id/Months"
+    style="@style/CategoryStyle"
+    android:background="@color/category_family"
+    android:text="@string/family_screen_name"/>
+
+<TextView
+    android:id="@+id/Clothes"
+    style="@style/CategoryStyle"
+    android:background="@color/category_conversation"
+    android:text="@string/conversations_screen_name"/>
+
+<TextView
+    android:id="@+id/Phrases"
+    style="@style/CategoryStyle"
+    android:background="@color/category_hard_words"
+    android:text="@string/hard_words_screen_name"/>
+
+</LinearLayout>
