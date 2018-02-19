@@ -31,7 +31,7 @@ tools:context="com.finalyearproject.learnpashto.EasyActivity">
             android:id="@+id/Colours"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/colours_screen_name" />
+            android:text="@string/colours_screen_name"/>
     </FrameLayout>
 
     <FrameLayout

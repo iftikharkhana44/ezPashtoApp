@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finalyearproject.learnpashto.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="160dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome"/>
+
+        <ImageView
+            android:layout_marginTop="-30dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/appname" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btnlearn"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:text="Learn"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btnplay"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mybutton"
+            android:text="Play"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
+
