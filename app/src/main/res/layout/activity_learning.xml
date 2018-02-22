@@ -15,109 +15,57 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <!-- Easy card board view -->
         <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:layout_margin="30dp">
-
+            style="@style/Card_view">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
+                style="@style/linear_layout_inner_learning_activity"
                 android:background="#66ff99"
-                android:id="@+id/btnEasy"
-                android:paddingLeft="10dp"
-                android:gravity="center">
-
+                android:id="@+id/btnEasy">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Easy"
-                    android:textSize="50dp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_gravity="center"/>
+                    android:text="@string/learning_easy"
+                    style="@style/text_view_learning"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:layout_margin="30dp">
 
+        <!-- Medium card board view -->
+        <android.support.v7.widget.CardView
+            style="@style/Card_view">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
+                style="@style/linear_layout_inner_learning_activity"
                 android:background="#ccff33"
-                android:id="@+id/btnMedium"
-                android:paddingLeft="10dp"
-                android:gravity="center">
-
+                android:id="@+id/btnMedium">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Medium"
-                    android:textSize="50dp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_gravity="center"/>
+                    android:text="@string/learning_medium"
+                    style="@style/text_view_learning"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:layout_margin="30dp">
 
+        <!-- Hard card board view -->
+        <android.support.v7.widget.CardView
+            style="@style/Card_view">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
+                style="@style/linear_layout_inner_learning_activity"
                 android:background="#ff8000"
-                android:id="@+id/btnHard"
-                android:paddingLeft="10dp"
-                android:gravity="center">
-
+                android:id="@+id/btnHard">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hard"
-                    android:textSize="50dp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_gravity="center"/>
+                    android:text="@string/learning_hard"
+                    style="@style/text_view_learning"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+        <!-- Very hard card board view -->
         <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:layout_margin="30dp">
-
+            style="@style/Card_view">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
+                style="@style/linear_layout_inner_learning_activity"
                 android:background="#ff1a1a"
-                android:id="@+id/btnVeryHard"
-                android:paddingLeft="10dp"
-                android:gravity="center">
-
+                android:id="@+id/btnVeryHard">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Very Hard"
-                    android:textSize="50dp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_gravity="center"/>
+                    android:text="@string/learning_very_hard"
+                    style="@style/text_view_learning"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 </LinearLayout>

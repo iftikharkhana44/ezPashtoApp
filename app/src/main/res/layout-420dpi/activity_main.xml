@@ -23,10 +23,9 @@
 
         <ImageView
             android:layout_marginTop="-20dp"
-            android:layout_width="310dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:src="@drawable/appname" />
-
     </LinearLayout>
 
     <LinearLayout

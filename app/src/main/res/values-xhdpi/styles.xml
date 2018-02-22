@@ -26,11 +26,49 @@
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
-    <!-- Style for the framelayouts -->
-    <style name="framelayouts">
+    <!-- Style for the frame_layouts -->
+    <style name="frame_layouts">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <!-- Styles for button on main_screen -->
+    <style name="button_style">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mybutton</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!-- Style for CardView widget in activity_learning -->
+    <style name="Card_view">
+        <item name="android:layout_width">330dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Style of the Linear_layouts of activity_learning -->
+    <style name="linear_layout_inner_learning_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Text View inside learning activity -->
+    <style name="text_view_learning">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

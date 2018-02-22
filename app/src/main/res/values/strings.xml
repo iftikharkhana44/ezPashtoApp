@@ -48,4 +48,22 @@
 
     <!--Title for Hard words page -->
     <string name="hard_words_screen_name">Hard words</string>
+
+    <!--Title for Play button -->
+    <string name="play_button">Play</string>
+
+    <!--Title for learn button -->
+    <string name="learn_button">Learn</string>
+
+    <!-- Title for Easy card view -->
+    <string name="learning_easy">EASY</string>
+
+    <!-- Title for Medium card view -->
+    <string name="learning_medium">MEDIUM</string>
+
+    <!-- Title for Hard card view -->
+    <string name="learning_hard">HARD</string>
+
+    <!-- Title for Very hard card view -->
+    <string name="learning_very_hard">VERY HARD</string>
 </resources>

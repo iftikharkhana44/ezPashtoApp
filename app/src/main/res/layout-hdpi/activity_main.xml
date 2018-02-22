@@ -23,10 +23,9 @@
 
         <ImageView
             android:layout_marginTop="-30dp"
-            android:layout_width="230dp"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:src="@drawable/appname" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -37,23 +36,15 @@
         android:layout_marginTop="30dp">
 
         <Button
+            style="@style/button_style"
             android:id="@+id/btnlearn"
-            android:layout_width="250dp"
-            android:layout_height="70dp"
-            android:textColor="#ffffff"
-            android:background="@drawable/mybutton"
-            android:text="Learn"
-            android:textSize="30sp"/>
+            android:text="@string/learn_button" />
 
         <Button
+            style="@style/button_style"
             android:id="@+id/btnplay"
-            android:layout_width="250dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/mybutton"
-            android:text="Play"
-            android:textColor="#ffffff"
-            android:textSize="30sp" />
+            android:text="@string/play_button"
+            android:layout_marginTop="25dp" />
     </LinearLayout>
 </LinearLayout>
 
