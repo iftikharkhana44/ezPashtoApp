@@ -54,7 +54,7 @@ public class LearningActivity extends AppCompatActivity {
             // The code in this method will be executed when the Play view is clicked on.
             @Override
             public void onClick(View view) {
-                Intent veryHardIntent = new Intent(LearningActivity.this, HardActivity.class);
+                Intent veryHardIntent = new Intent(LearningActivity.this, veryHardActivity.class);
                 startActivity(veryHardIntent);
             }
         });

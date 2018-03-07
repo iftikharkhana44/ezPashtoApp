@@ -1,9 +1,5 @@
 package com.finalyearproject.learnpashto;
 
-/**
- * Created by HP on 08/02/2018.
- */
-
 public class Word {
 
     //Fields
@@ -14,7 +10,7 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     //Constructors
-    public Word(String eEnglish, String pPashto, int aAudio){
+    public Word(String eEnglish, String pPashto, int aAudio) {
         english = eEnglish;
         pashto = pPashto;
         audio = aAudio;
