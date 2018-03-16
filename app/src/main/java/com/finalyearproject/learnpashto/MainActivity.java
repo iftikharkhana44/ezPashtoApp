@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //here we find the views which show the play and learn options on the main screen
         Button learn = (Button) findViewById(R.id.btnlearn);
         final Button play = (Button) findViewById(R.id.btnplay);

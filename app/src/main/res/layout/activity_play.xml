@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.finalyearproject.learnpashto.PlayActivity">
+    tools:context="com.finalyearproject.learnpashto.PlayActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/play_background">
 
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@color/play_button_background"
+        android:text="quiz"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/instruction"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@color/play_button_background"
+        android:text="quiz instruction"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/score"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@color/play_button_background"
+        android:text="your best score"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

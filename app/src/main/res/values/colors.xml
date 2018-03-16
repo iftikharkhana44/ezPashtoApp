@@ -66,4 +66,8 @@
 
     <!-- Background color for the Hard words category -->
     <color name="category_hard_words">#d757f6</color>
+
+    <color name="play_background">#ffc299</color>
+
+    <color name="play_button_background">#e65c00</color>
 </resources>

@@ -89,7 +89,7 @@ public class FruitVegtableActivity extends AppCompatActivity {
             words.add(new Word("Lemon", "Nimbu", R.drawable.lemon, R.raw.brown));
             words.add(new Word("Mango", "Aam", R.drawable.comingsoon, R.raw.brown));
             words.add(new Word("Onion", "Piyaz", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Peach", "Shaltau", R.drawable.comingsoon, R.raw.brown));
+            words.add(new Word("Peach", "Shaltalu", R.drawable.comingsoon, R.raw.brown));
             words.add(new Word("Peanut", "Moong Palai", R.drawable.comingsoon, R.raw.brown));
             words.add(new Word("Pear", "Nashpatay", R.drawable.pear, R.raw.brown));
             words.add(new Word("Pineapple", "Ananas", R.drawable.pineapple, R.raw.brown));

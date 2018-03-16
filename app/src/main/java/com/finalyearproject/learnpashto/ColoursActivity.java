@@ -74,7 +74,7 @@ public class ColoursActivity extends AppCompatActivity {
 
         words.add(new Word("Red","Soor",R.drawable.color_red, R.raw.red));
         words.add(new Word("Green","Sheen",R.drawable.color_green, R.raw.green));
-        words.add(new Word("Black","Tor",R.drawable.color_black, R.raw.black));
+        words.add(new Word("Black","Toor",R.drawable.color_black, R.raw.black));
         words.add(new Word("Blue","Udee",R.drawable.color_blue, R.raw.blue));
         words.add(new Word("White","Spin",R.drawable.color_white, R.raw.white));
         words.add(new Word("Orange","Naranji",R.drawable.color_orange, R.raw.orange));
@@ -148,5 +148,9 @@ public class ColoursActivity extends AppCompatActivity {
             // also unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
             mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
+
+
+
     }
+
 }

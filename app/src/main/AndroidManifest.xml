@@ -28,15 +28,17 @@
         <activity android:name=".EasyActivity" />
         <activity android:name=".HardActivity" />
         <activity android:name=".MediumActivity" />
-        <activity android:name=".veryHardActivity"/>
-        <activity android:name=".NumbersActivity"/>
-        <activity android:name=".ColoursActivity"/>
+        <activity android:name=".veryHardActivity" />
+        <activity android:name=".NumbersActivity" />
+        <activity android:name=".ColoursActivity" />
         <activity android:name=".DaysActivity" />
         <activity android:name=".FruitVegtableActivity" />
         <activity android:name=".AnimalsActivity" />
         <activity android:name=".School_Supplies" />
-        <activity android:name=".TransportationActivity"/>
-        <activity android:name=".Body_Parts_Activity">
-        </activity>
+        <activity android:name=".TransportationActivity" />
+        <activity android:name=".Body_Parts_Activity" />
+        <activity android:name=".ColoursQuiz" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
+
 </manifest>
