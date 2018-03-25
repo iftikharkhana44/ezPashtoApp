@@ -12,11 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by HP on 24/02/2018.
- */
-
-public class DaysActivity extends AppCompatActivity {
+public class TransportationCategoryActivity extends AppCompatActivity {
     /**
      * Handles playback of all the sound files
      */
@@ -75,23 +71,14 @@ public class DaysActivity extends AppCompatActivity {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Day", "Wraz",R.raw.day ));
-        words.add(new Word("Today","Nen", R.raw.today));
-        words.add(new Word("Yesterday","Parun", R.raw.yesterday));
-        words.add(new Word("Tomorrow","Sabaa", R.raw.tomorrow));
-        words.add(new Word("Day after tomorrow","saba na Bel sa-baa", R.raw.day_after_tomorrow));
-        words.add(new Word("Next week","bala haafta", R.raw.next_week));
-        words.add(new Word("This week","Da haapta", R.raw.this_week));
-        words.add(new Word("last week","Tera shawey haafta ", R.raw.last_week));
-        words.add(new Word("Monday","Naswari", R.raw.brown));
-        words.add(new Word("Tuesday","Naswari", R.raw.brown));
-        words.add(new Word("Wednesday","Charshamba", R.raw.wednesday));
-        words.add(new Word("Thursday","Ziarat", R.raw.thursday));
-        words.add(new Word("Friday","Jumma", R.raw.friday));
-        words.add(new Word("Saturday","Khali", R.raw.saturday));
-        words.add(new Word("Sunday","Atwar", R.raw.sunday));
+        words.add(new Word("Car", "Motar", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Bus", "Bas", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Train", "Railgadi", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Airplane", "Tayara", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Boat", "Kishtay", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Helicopter", "chwrlkh", R.drawable.comingsoon, R.raw.ten));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_days);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_school_supplies);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -118,7 +105,7 @@ public class DaysActivity extends AppCompatActivity {
 
                     // Create and setup the @link MediaPlayer for the audio resource associated
                     // with the current word
-                    audioPlayer = MediaPlayer.create(DaysActivity.this, word.getaAudio());
+                    audioPlayer = MediaPlayer.create(TransportationCategoryActivity.this, word.getaAudio());
 
                     //Start the audio file
                     audioPlayer.start();

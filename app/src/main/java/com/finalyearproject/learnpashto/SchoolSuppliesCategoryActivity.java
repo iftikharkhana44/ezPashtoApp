@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class TransportationActivity extends AppCompatActivity {
+public class SchoolSuppliesCategoryActivity extends AppCompatActivity{
     /**
      * Handles playback of all the sound files
      */
@@ -71,22 +71,17 @@ public class TransportationActivity extends AppCompatActivity {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
+        words.add(new Word("Pencil", "Qalam", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Backpack", "Basta", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Eraser", "Rubber", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Book", "Kitab", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Calculator", "Shmermashyn", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Ruler", "KhaitKash", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Scissors", "Qainchi", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Sellotape", "Rabaltape", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("School", "Maktub", R.drawable.comingsoon, R.raw.ten));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_school_supplies);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_transportation);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -113,7 +108,7 @@ public class TransportationActivity extends AppCompatActivity {
 
                     // Create and setup the @link MediaPlayer for the audio resource associated
                     // with the current word
-                    audioPlayer = MediaPlayer.create(TransportationActivity.this, word.getaAudio());
+                    audioPlayer = MediaPlayer.create(SchoolSuppliesCategoryActivity.this, word.getaAudio());
 
                     //Start the audio file
                     audioPlayer.start();

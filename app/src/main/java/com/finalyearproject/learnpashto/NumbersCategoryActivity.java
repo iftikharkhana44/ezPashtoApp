@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,9 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT;
-
-public class NumbersActivity extends AppCompatActivity {
+public class NumbersCategoryActivity extends AppCompatActivity {
 
     /**Handles playback of all the sound files*/
     private MediaPlayer mMediaPlayer;
@@ -110,7 +107,7 @@ public class NumbersActivity extends AppCompatActivity {
 
                         // Create and setup the @link MediaPlayer for the audio resource associated
                         // with the current word
-                        mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getaAudio());
+                        mMediaPlayer = MediaPlayer.create(NumbersCategoryActivity.this, word.getaAudio());
 
                         //Start the audio file
                         mMediaPlayer.start();

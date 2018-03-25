@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class FruitVegtableActivity extends AppCompatActivity {
+public class FruitVegetableCategoryActivity extends AppCompatActivity {
 
         /**
          * Handles playback of all the sound files
@@ -72,30 +72,30 @@ public class FruitVegtableActivity extends AppCompatActivity {
 
             final ArrayList<Word> words = new ArrayList<Word>();
 
-            words.add(new Word("Apple", "Maana", R.drawable.apple, R.raw.red));
-            words.add(new Word("Banana", "Kaila", R.drawable.comingsoon, R.raw.green));
-            words.add(new Word("Grapes", "kwar", R.drawable.grapes, R.raw.black));
-            words.add(new Word("Pomegranate", "Anar", R.drawable.comingsoon, R.raw.blue));
-            words.add(new Word("Orange", "Malta", R.drawable.orange, R.raw.white));
-            words.add(new Word("Watermelon", "Hindwana", R.drawable.watermelon, R.raw.orange));
-            words.add(new Word("Apricot", "Khobani", R.drawable.comingsoon, R.raw.yellow));
-            words.add(new Word("Plum", "Aloocha", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Cabbage", "Band Gopi", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Coconut", "Kopra", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Corn", "Waggay", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Eggplant", "Bantingun", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Garlic", "Ooga", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Gren peas", "Mattur", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Lemon", "Nimbu", R.drawable.lemon, R.raw.brown));
-            words.add(new Word("Mango", "Aam", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Onion", "Piyaz", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Peach", "Shaltalu", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Peanut", "Moong Palai", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Pear", "Nashpatay", R.drawable.pear, R.raw.brown));
-            words.add(new Word("Pineapple", "Ananas", R.drawable.pineapple, R.raw.brown));
-            words.add(new Word("Potato", "Aloo", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Pumpkin", "Kaddu", R.drawable.comingsoon, R.raw.brown));
-            words.add(new Word("Spinach", "Paluk", R.drawable.comingsoon, R.raw.brown));
+            words.add(new Word("Apple", "Maana", R.drawable.apple, R.raw.ten));
+            words.add(new Word("Banana", "Kaila", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Grapes", "kwar", R.drawable.grapes, R.raw.ten));
+            words.add(new Word("Pomegranate", "Anar", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Orange", "Malta", R.drawable.orange, R.raw.ten));
+            words.add(new Word("Watermelon", "Hindwana", R.drawable.watermelon, R.raw.ten));
+            words.add(new Word("Apricot", "Khobani", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Plum", "Aloocha", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Cabbage", "Band Gopi", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Coconut", "Kopra", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Corn", "Waggay", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Eggplant", "Bantingun", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Garlic", "Ooga", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Gren peas", "Mattur", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Lemon", "Nimbu", R.drawable.lemon, R.raw.ten));
+            words.add(new Word("Mango", "Aam", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Onion", "Piyaz", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Peach", "Shaltalu", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Peanut", "Moong Palai", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Pear", "Nashpatay", R.drawable.pear, R.raw.ten));
+            words.add(new Word("Pineapple", "Ananas", R.drawable.pineapple, R.raw.ten));
+            words.add(new Word("Potato", "Aloo", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Pumpkin", "Kaddu", R.drawable.comingsoon, R.raw.ten));
+            words.add(new Word("Spinach", "Paluk", R.drawable.comingsoon, R.raw.ten));
 
             WordAdapter adapter = new WordAdapter(this, words, R.color.category_fruit_vegetable);
 
@@ -124,7 +124,7 @@ public class FruitVegtableActivity extends AppCompatActivity {
 
                         // Create and setup the @link MediaPlayer for the audio resource associated
                         // with the current word
-                        audioPlayer = MediaPlayer.create(com.finalyearproject.learnpashto.FruitVegtableActivity.this, word.getaAudio());
+                        audioPlayer = MediaPlayer.create(FruitVegetableCategoryActivity.this, word.getaAudio());
 
                         //Start the audio file
                         audioPlayer.start();

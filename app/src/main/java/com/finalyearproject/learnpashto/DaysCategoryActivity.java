@@ -12,7 +12,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class School_Supplies extends AppCompatActivity{
+/**
+ * Created by HP on 24/02/2018.
+ */
+
+public class DaysCategoryActivity extends AppCompatActivity {
     /**
      * Handles playback of all the sound files
      */
@@ -71,22 +75,23 @@ public class School_Supplies extends AppCompatActivity{
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
+        words.add(new Word("Day", "Wraz",R.raw.day ));
+        words.add(new Word("Today","Nen", R.raw.today));
+        words.add(new Word("Yesterday","Parun", R.raw.yesterday));
+        words.add(new Word("Tomorrow","Sabaa", R.raw.tomorrow));
+        words.add(new Word("Day after tomorrow","saba na Bel sa-baa", R.raw.day_after_tomorrow));
+        words.add(new Word("Next week","bala haafta", R.raw.next_week));
+        words.add(new Word("This week","Da haapta", R.raw.this_week));
+        words.add(new Word("last week","Tera shawey haafta ", R.raw.last_week));
+        words.add(new Word("Monday","Naswari", R.raw.ten));
+        words.add(new Word("Tuesday","Naswari", R.raw.ten));
+        words.add(new Word("Wednesday","Charshamba", R.raw.wednesday));
+        words.add(new Word("Thursday","Ziarat", R.raw.thursday));
+        words.add(new Word("Friday","Jumma", R.raw.friday));
+        words.add(new Word("Saturday","Khali", R.raw.saturday));
+        words.add(new Word("Sunday","Atwar", R.raw.sunday));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_transportation);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_days);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -113,7 +118,7 @@ public class School_Supplies extends AppCompatActivity{
 
                     // Create and setup the @link MediaPlayer for the audio resource associated
                     // with the current word
-                    audioPlayer = MediaPlayer.create(com.finalyearproject.learnpashto.School_Supplies.this, word.getaAudio());
+                    audioPlayer = MediaPlayer.create(DaysCategoryActivity.this, word.getaAudio());
 
                     //Start the audio file
                     audioPlayer.start();

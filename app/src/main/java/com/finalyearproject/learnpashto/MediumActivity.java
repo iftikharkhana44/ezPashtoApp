@@ -18,10 +18,10 @@ public class MediumActivity extends AppCompatActivity {
         // set an on click method on the Numbers view
         Animals.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Numbers View is clicked on.
-            // This will start the NumbersActivity
+            // This will start the NumbersCategoryActivity
             @Override
             public void onClick(View view) {
-                Intent animals_Intent = new Intent(MediumActivity.this, AnimalsActivity.class);
+                Intent animals_Intent = new Intent(MediumActivity.this, AnimalsCategoryActivity.class);
                 startActivity(animals_Intent);
             }
         });
@@ -31,10 +31,10 @@ public class MediumActivity extends AppCompatActivity {
         // set an on click method on the Numbers view
         School.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Numbers View is clicked on.
-            // This will start the NumbersActivity
+            // This will start the NumbersCategoryActivity
             @Override
             public void onClick(View view) {
-                Intent school_Intent = new Intent(MediumActivity.this, School_Supplies.class);
+                Intent school_Intent = new Intent(MediumActivity.this, SchoolSuppliesCategoryActivity.class);
                 startActivity(school_Intent);
             }
         });
@@ -44,10 +44,10 @@ public class MediumActivity extends AppCompatActivity {
         // set an on click method on the Numbers view
         Transport.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Numbers View is clicked on.
-            // This will start the NumbersActivity
+            // This will start the NumbersCategoryActivity
             @Override
             public void onClick(View view) {
-                Intent transport_Intent = new Intent(MediumActivity.this, TransportationActivity.class);
+                Intent transport_Intent = new Intent(MediumActivity.this, TransportationCategoryActivity.class);
                 startActivity(transport_Intent);
             }
         });
@@ -57,10 +57,10 @@ public class MediumActivity extends AppCompatActivity {
         // set an on click method on the Numbers view
         body.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Numbers View is clicked on.
-            // This will start the NumbersActivity
+            // This will start the NumbersCategoryActivity
             @Override
             public void onClick(View view) {
-                Intent body_Intent = new Intent(MediumActivity.this, Body_Parts_Activity.class);
+                Intent body_Intent = new Intent(MediumActivity.this, BodyPartsCategoryActivity.class);
                 startActivity(body_Intent);
             }
         });

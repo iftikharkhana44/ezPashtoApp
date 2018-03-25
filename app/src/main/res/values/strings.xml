@@ -19,7 +19,7 @@
     <!--Title for School Supplies page -->
     <string name="school_supplies_screen_name">School Supplies</string>
 
-    <!--Title for TransportationActivity page -->
+    <!--Title for TransportationCategoryActivity page -->
     <string name="transportation_screen_name">Transportation</string>
 
     <!--Title for Body parts page -->

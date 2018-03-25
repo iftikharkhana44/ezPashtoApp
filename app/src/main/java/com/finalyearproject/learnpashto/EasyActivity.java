@@ -19,10 +19,10 @@ public class EasyActivity extends AppCompatActivity {
         // set an on click method on the Numbers view
         numbers.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Numbers View is clicked on.
-            // This will start the NumbersActivity
+            // This will start the NumbersCategoryActivity
             @Override
             public void onClick(View view) {
-                Intent numbers_Intent = new Intent(EasyActivity.this, NumbersActivity.class);
+                Intent numbers_Intent = new Intent(EasyActivity.this, NumbersCategoryActivity.class);
                 startActivity(numbers_Intent);
             }
         });
@@ -34,7 +34,7 @@ public class EasyActivity extends AppCompatActivity {
             // This will start the Colours activity
             @Override
             public void onClick(View view) {
-                Intent colours_Intent = new Intent(EasyActivity.this, ColoursActivity.class);
+                Intent colours_Intent = new Intent(EasyActivity.this, ColoursCategoryActivity.class);
                 startActivity(colours_Intent);
             }
         });
@@ -46,7 +46,7 @@ public class EasyActivity extends AppCompatActivity {
             // This will start the Colours activity
             @Override
             public void onClick(View view) {
-                Intent days_Intent = new Intent(EasyActivity.this, DaysActivity.class);
+                Intent days_Intent = new Intent(EasyActivity.this, DaysCategoryActivity.class);
                 startActivity(days_Intent);
             }
         });
@@ -58,7 +58,7 @@ public class EasyActivity extends AppCompatActivity {
             // This will start the Colours activity
             @Override
             public void onClick(View view) {
-                Intent Fruit_Vegetable_Intent = new Intent(EasyActivity.this, FruitVegtableActivity.class);
+                Intent Fruit_Vegetable_Intent = new Intent(EasyActivity.this, FruitVegetableCategoryActivity.class);
                 startActivity(Fruit_Vegetable_Intent);
             }
         });

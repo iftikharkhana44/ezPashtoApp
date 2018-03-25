@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ColoursActivity extends AppCompatActivity {
+public class AnimalsCategoryActivity extends AppCompatActivity {
 
     /**
      * Handles playback of all the sound files
@@ -72,16 +72,22 @@ public class ColoursActivity extends AppCompatActivity {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Red","Soor",R.drawable.color_red, R.raw.red));
-        words.add(new Word("Green","Sheen",R.drawable.color_green, R.raw.green));
-        words.add(new Word("Black","Toor",R.drawable.color_black, R.raw.black));
-        words.add(new Word("Blue","Udee",R.drawable.color_blue, R.raw.blue));
-        words.add(new Word("White","Spin",R.drawable.color_white, R.raw.white));
-        words.add(new Word("Orange","Naranji",R.drawable.color_orange, R.raw.orange));
-        words.add(new Word("Yellow", "Zyral",R.drawable.color_yellow, R.raw.yellow));
-        words.add(new Word("Brown","Naswari",R.drawable.color_brown, R.raw.brown));
+        words.add(new Word("Horse", "Aas", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Dog", "Spey", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Cat", "Peesho", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Pigeon", "Kawtara", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Monkey", "Shaado", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Lion", "Zmarey", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Elephant", "Hathi", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Fox", "Giddr", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Donkey", "Khar", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Chicken", "Charga", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Ant", "Megey", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Sheep", "Gadda", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Snake", "Maar", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Duck", "Batakha", R.drawable.comingsoon, R.raw.ten));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.white);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_animal);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -108,7 +114,7 @@ public class ColoursActivity extends AppCompatActivity {
 
                     // Create and setup the @link MediaPlayer for the audio resource associated
                     // with the current word
-                    audioPlayer = MediaPlayer.create(ColoursActivity.this, word.getaAudio());
+                    audioPlayer = MediaPlayer.create(AnimalsCategoryActivity.this, word.getaAudio());
 
                     //Start the audio file
                     audioPlayer.start();
@@ -148,9 +154,5 @@ public class ColoursActivity extends AppCompatActivity {
             // also unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
             mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
-
-
-
     }
-
 }

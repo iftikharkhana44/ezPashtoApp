@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Body_Parts_Activity extends AppCompatActivity{
+public class BodyPartsCategoryActivity extends AppCompatActivity{
     /**
      * Handles playback of all the sound files
      */
@@ -71,20 +71,20 @@ public class Body_Parts_Activity extends AppCompatActivity{
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
-        words.add(new Word("English", "Pashto", R.drawable.comingsoon, R.raw.red));
+        words.add(new Word("Hair", "Wekhta", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Head", "Sar", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("For-head", "Tandday", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Eyebrows", "Banra", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Eye", "Stargay", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Ears", "Ghwag", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Nose", "Poza", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Lips", "Shunday", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Mouth", "Khula", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Teeth", "Ghakhuna", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Tongue", "JABA", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Chin", "Zanay", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Hand", "Las", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Chest", "Sina", R.drawable.comingsoon, R.raw.ten));
 
         WordAdapter adapter = new WordAdapter(this, words, R.color.category_body_parts);
 
@@ -113,7 +113,7 @@ public class Body_Parts_Activity extends AppCompatActivity{
 
                     // Create and setup the @link MediaPlayer for the audio resource associated
                     // with the current word
-                    audioPlayer = MediaPlayer.create(com.finalyearproject.learnpashto.Body_Parts_Activity.this, word.getaAudio());
+                    audioPlayer = MediaPlayer.create(BodyPartsCategoryActivity.this, word.getaAudio());
 
                     //Start the audio file
                     audioPlayer.start();
