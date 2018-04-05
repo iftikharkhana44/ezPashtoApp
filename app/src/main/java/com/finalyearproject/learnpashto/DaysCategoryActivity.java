@@ -91,7 +91,7 @@ public class DaysCategoryActivity extends AppCompatActivity {
         words.add(new Word("Saturday","Khali", R.raw.saturday));
         words.add(new Word("Sunday","Atwar", R.raw.sunday));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_days);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.white);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/splashscreenbackground"
+tools:context="com.finalyearproject.learnpashto.CategoryActivity">
+
+    <LinearLayout
+        style="@style/linear_layout_category_activity">
+        <TextView
+            style="@style/title_category"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/title_category"/>
+
+        <!-- First row of categories -->
+        <LinearLayout
+            style="@style/category_layout">
+            <Button
+                android:id="@+id/numbers"
+                android:background="@drawable/numbers_activity"
+                style="@style/category_Right_button"/>
+            <Button
+                android:id="@+id/colours"
+                android:background="@drawable/colours_activity"
+                style="@style/category_Left_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_numbers"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_colours"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <!-- Second row of categories -->
+        <LinearLayout
+            style="@style/category_layout">
+            <Button
+                android:id="@+id/food"
+                android:background="@drawable/fruitandveg_activity"
+                style="@style/category_Right_button"/>
+            <Button
+                android:id="@+id/animals"
+                android:background="@drawable/animals_activity"
+                style="@style/category_Left_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_food"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_animals"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <!-- Third row of categories -->
+        <LinearLayout
+            style="@style/category_layout">
+            <Button
+                android:id="@+id/body"
+                android:background="@drawable/body_activity"
+                style="@style/category_Right_button"/>
+            <Button
+                android:id="@+id/alphabets"
+                android:background="@drawable/alphabets__activity"
+                style="@style/category_Left_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_body"
+                android:textColor="@color/colorPrimaryDark" />
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_music"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

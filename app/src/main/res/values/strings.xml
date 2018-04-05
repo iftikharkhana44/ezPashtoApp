@@ -1,69 +1,39 @@
 <resources>
     <string name="app_name">LearnPashto</string>
 
-    <!-- Title for Number page -->
-    <string name="number_screen_name">Numbers</string>
-
-    <!-- Title for Colours page -->
-    <string name="colours_screen_name">Colours</string>
-
-    <!--Title for Days page -->
-    <string name="days_screen_name">Days</string>
-
-    <!--Title for Fruit and Vegetable page -->
-    <string name="fruit_vegetable_screen_name">Fruit and Vegetable</string>
-
-    <!--Title for Animals page -->
-    <string name="animals_screen_name">Animals</string>
-
-    <!--Title for School Supplies page -->
-    <string name="school_supplies_screen_name">School Supplies</string>
-
-    <!--Title for TransportationCategoryActivity page -->
-    <string name="transportation_screen_name">Transportation</string>
-
-    <!--Title for Body parts page -->
-    <string name="body_parts_screen_name">Body Parts</string>
-
-    <!--Title for Music parts page -->
-    <string name="music_screen_name">Music Instruments</string>
-
-    <!--Title for Months page -->
-    <string name="months_screen_name">Months</string>
-
-    <!--Title for Clothes page -->
-    <string name="clothes_screen_name">Clothes</string>
-
-    <!--Title for Phrases page -->
-    <string name="phrases_screen_name">Phrases</string>
-
-    <!--Title for Vocabulary page -->
-    <string name="vocabulary_screen_name">Vocabulary</string>
-
-    <!--Title for Family page -->
-    <string name="family_screen_name">Family</string>
-
-    <!--Title for Conversations page -->
-    <string name="conversations_screen_name">Conversations</string>
-
-    <!--Title for Hard words page -->
-    <string name="hard_words_screen_name">Hard words</string>
-
-    <!--Title for Play button -->
+    <!--Title for play button -->
     <string name="play_button">Play</string>
 
     <!--Title for learn button -->
     <string name="learn_button">Learn</string>
 
-    <!-- Title for Easy card view -->
-    <string name="learning_easy">EASY</string>
+    <!-- Title for category title -->
+    <string name="title_category">Category</string>
 
-    <!-- Title for Medium card view -->
-    <string name="learning_medium">MEDIUM</string>
+    <!-- Title for category numbers title -->
+    <string name="title_numbers">Numbers</string>
 
-    <!-- Title for Hard card view -->
-    <string name="learning_hard">HARD</string>
+    <!-- Title for category colours title -->
+    <string name="title_colours">Colours</string>
 
-    <!-- Title for Very hard card view -->
-    <string name="learning_very_hard">VERY HARD</string>
+    <!-- Title for category Animals title -->
+    <string name="title_animals">Animals</string>
+
+    <!-- Title for category food title -->
+    <string name="title_food">Food</string>
+
+    <!-- Title for category Alphabets title -->
+    <string name="title_music">Alphabets</string>
+
+    <!-- Title for category Body title -->
+    <string name="title_body">Body</string>
+
+    <!-- Label for dropdown menu option if the user is male [CHAR LIMIT=20] -->
+    <string name="gender_male">Male</string>
+
+    <!-- Label for dropdown menu option if the user is female [CHAR LIMIT=20] -->
+    <string name="gender_female">Female</string>
+
+    <!-- Label for dropdown menu option if the user is unknown [CHAR LIMIT=20] -->
+    <string name="gender_unknown">Unknown</string>
 </resources>

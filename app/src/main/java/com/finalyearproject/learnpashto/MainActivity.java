@@ -14,7 +14,6 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the Learn View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent learnIntent = new Intent(MainActivity.this, LearningActivity.class);
+                Intent learnIntent = new Intent(MainActivity.this, CategoryActivity.class);
                 startActivity(learnIntent);
             }
         });

@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Style for a category of vocabulary words -->
-    <style name="CategoryStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:textAppearanceLarge</item>
-        <item name="android:textSize">35sp</item>
-    </style>
-
-    <!-- Style for the Title of each Intermediate -->
-    <style name="IntermediateTitleStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_marginBottom">20dp</item>
-        <item name="android:textAppearance">?android:textAppearanceLarge</item>
-        <item name="android:textSize">60sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/colorPrimary</item>
-    </style>
-
-    <!-- Style for the frame_layouts -->
-    <style name="frame_layouts">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">40dp</item>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <!-- Styles for button on main_screen -->
@@ -44,30 +22,56 @@
         <item name="android:textColor">#fff</item>
     </style>
 
-    <!-- Style for CardView widget in activity_learning -->
-    <style name="Card_view">
-        <item name="android:layout_width">360dp</item>
-        <item name="android:layout_height">112dp</item>
-        <item name="android:clickable">true</item>
-        <item name="android:layout_margin">13dp</item>
-        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    <!-- Style of main LinearLayout of activity_category -->
+    <style name="linear_layout_category_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">20dp</item>
     </style>
 
-    <!-- Style of the Linear_layouts of activity_learning -->
-    <style name="linear_layout_inner_learning_activity">
+    <!-- Style of Category title of activity_category -->
+    <style name="title_category">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style of category buttons LinearLayout -->
+    <style name="category_layout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">20dp</item>
     </style>
 
-    <!-- Text View inside learning activity -->
-    <style name="text_view_learning">
+
+    <!-- Style Right category buttons -->
+    <style name="category_Right_button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!-- Style Left category buttons -->
+    <style name="category_Left_button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!-- Style category names -->
+    <style name="category_name">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">45sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#fff</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:gravity">center</item>
     </style>
 

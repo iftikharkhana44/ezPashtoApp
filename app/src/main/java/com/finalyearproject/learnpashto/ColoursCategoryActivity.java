@@ -72,16 +72,16 @@ public class ColoursCategoryActivity extends AppCompatActivity {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Red","Soor",R.drawable.color_red, R.raw.ten));
-        words.add(new Word("Green","Sheen",R.drawable.color_green, R.raw.ten));
-        words.add(new Word("Black","Toor",R.drawable.color_black, R.raw.ten));
-        words.add(new Word("Blue","Udee",R.drawable.color_blue, R.raw.ten));
-        words.add(new Word("White","Spin",R.drawable.color_white, R.raw.ten));
-        words.add(new Word("Orange","Naranji",R.drawable.color_orange, R.raw.ten));
-        words.add(new Word("Yellow", "Zyral",R.drawable.color_yellow, R.raw.ten));
-        words.add(new Word("Brown","Naswari",R.drawable.color_brown, R.raw.ten));
+        words.add(new Word("Red","Soor",R.drawable.color_red, R.raw.redsor));
+        words.add(new Word("Green","Sheen",R.drawable.color_green, R.raw.greensheen));
+        words.add(new Word("Black","Toor",R.drawable.color_black, R.raw.blacktor));
+        words.add(new Word("Blue","Udee",R.drawable.color_blue, R.raw.blueudee));
+        words.add(new Word("White","Spin",R.drawable.color_white, R.raw.whitespin));
+        words.add(new Word("Orange","Naranji",R.drawable.color_orange, R.raw.orangenarangi));
+        words.add(new Word("Yellow", "Zyral",R.drawable.color_yellow, R.raw.yellowzyral));
+        words.add(new Word("Brown","Naswari",R.drawable.color_brown, R.raw.brownnaswari));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.white);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_colours);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -148,9 +148,5 @@ public class ColoursCategoryActivity extends AppCompatActivity {
             // also unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
             mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
-
-
-
     }
-
 }

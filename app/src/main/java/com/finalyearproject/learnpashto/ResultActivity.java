@@ -1,35 +1,46 @@
 package com.finalyearproject.learnpashto;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
+
+    private TextView resultLabel;
+    private Button btntryAgain;
+    private Button btnlearn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        TextView resultLabel = (TextView) findViewById(R.id.resultLabel);
-        TextView highScoreLabel = (TextView) findViewById(R.id.high_score);
+
+        resultLabel = (TextView) findViewById(R.id.resultLabel);
 
         int score = getIntent().getIntExtra("RIGHT_ANSWER_COUNT", 0);
-        resultLabel.setText(score + " / 8");
+        resultLabel.setText(score + " out of " + EasyQuiz.getQuizCount());
 
-        SharedPreferences settings = getSharedPreferences("GAME_DATA", Context.MODE_PRIVATE);
-        int highScore = settings.getInt("HIGH_SCORE", 0);
+        btntryAgain = (Button) findViewById(R.id.again);
+        btntryAgain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tryagainIntent = new Intent(ResultActivity.this, EasyQuiz.class);
+                startActivity(tryagainIntent);
+                finish();
+            }
+        });
 
-        if (score > highScore) {
-            highScoreLabel.setText("High score : " + score);
-
-            //update total score.
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putInt("TotalScore ", highScore);
-            editor.commit();
-        }else {
-            highScoreLabel.setText("High score : " + highScore);
-        }
+        btnlearn = (Button) findViewById(R.id.learnQuiz);
+        btnlearn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent learnQuizIntent = new Intent(ResultActivity.this, CategoryActivity.class);
+                startActivity(learnQuizIntent);
+                finish();
+            }
+        });
     }
 }

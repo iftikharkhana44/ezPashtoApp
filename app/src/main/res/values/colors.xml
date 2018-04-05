@@ -25,8 +25,8 @@
     <!-- Background color for the family members category -->
     <color name="category_colours">#8800A0</color>
 
-    <!-- Background color for the colors category -->
-    <color name="category_days">#379237</color>
+    <!-- Background color for the food category -->
+    <color name="category_food">#379237</color>
 
     <!-- Background color for the phrases category -->
     <color name="category_fruit_vegetable">#1464f6</color>

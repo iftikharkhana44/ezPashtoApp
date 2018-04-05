@@ -9,36 +9,76 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LearningActivity" />
-        <activity android:name=".PlayActivity" />
-        <activity android:name=".EasyActivity" />
-        <activity android:name=".HardActivity" />
-        <activity android:name=".MediumActivity" />
-        <activity android:name=".veryHardActivity" />
-        <activity android:name=".NumbersCategoryActivity" />
-        <activity android:name=".ColoursCategoryActivity" />
+        <activity
+            android:name=".PlayActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NumbersCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ColoursCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity android:name=".DaysCategoryActivity" />
-        <activity android:name=".FruitVegetableCategoryActivity" />
-        <activity android:name=".AnimalsCategoryActivity" />
-        <activity android:name=".SchoolSuppliesCategoryActivity" />
-        <activity android:name=".TransportationCategoryActivity" />
-        <activity android:name=".BodyPartsCategoryActivity" />
-        <activity android:name=".ColoursQuiz" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity
+            android:name=".FoodCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AnimalsCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SchoolCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransportationCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BodyPartsCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EasyQuiz"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlphabetsCategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".selectquiz"></activity>
     </application>
 
 </manifest>
