@@ -12,10 +12,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by HP on 24/02/2018.
- */
-
 public class DaysCategoryActivity extends AppCompatActivity {
     /**
      * Handles playback of all the sound files

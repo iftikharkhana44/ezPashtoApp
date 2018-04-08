@@ -1,17 +1,20 @@
 package com.finalyearproject.learnpashto;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
     private TextView resultLabel;
-    private Button btntryAgain;
-    private Button btnlearn;
+    private Button btnTryAgain;
+    private Button btnLearn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,20 +24,21 @@ public class ResultActivity extends AppCompatActivity {
         resultLabel = (TextView) findViewById(R.id.resultLabel);
 
         int score = getIntent().getIntExtra("RIGHT_ANSWER_COUNT", 0);
-        resultLabel.setText(score + " out of " + EasyQuiz.getQuizCount());
+        int numberOfQuestions = getIntent().getIntExtra("NUMBER_OF_QUESTIONS", 0);
+        resultLabel.setText(score + " out of " + numberOfQuestions);
 
-        btntryAgain = (Button) findViewById(R.id.again);
-        btntryAgain.setOnClickListener(new View.OnClickListener() {
+        btnTryAgain = (Button) findViewById(R.id.again);
+        btnTryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent tryagainIntent = new Intent(ResultActivity.this, EasyQuiz.class);
-                startActivity(tryagainIntent);
+                Intent tryAgainIntent = new Intent(ResultActivity.this, QuizActivity.class);
+                startActivity(tryAgainIntent);
                 finish();
             }
         });
 
-        btnlearn = (Button) findViewById(R.id.learnQuiz);
-        btnlearn.setOnClickListener(new View.OnClickListener() {
+        btnLearn = (Button) findViewById(R.id.learnQuiz);
+        btnLearn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent learnQuizIntent = new Intent(ResultActivity.this, CategoryActivity.class);
@@ -42,5 +46,15 @@ public class ResultActivity extends AppCompatActivity {
                 finish();
             }
         });
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    @Override
+    public  boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

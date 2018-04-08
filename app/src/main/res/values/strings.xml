@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">LearnPashto</string>
+    <!-- App name label -->
+    <string name="app_name">ezPashto</string>
+    <!-- Learning categories label -->
+    <string name="learning">Learning Categories</string>
+    <!-- Learning quiz result label -->
+    <string name="quizResult">Quiz Results</string>
 
     <!--Title for play button -->
     <string name="play_button">Play</string>
@@ -27,13 +32,4 @@
 
     <!-- Title for category Body title -->
     <string name="title_body">Body</string>
-
-    <!-- Label for dropdown menu option if the user is male [CHAR LIMIT=20] -->
-    <string name="gender_male">Male</string>
-
-    <!-- Label for dropdown menu option if the user is female [CHAR LIMIT=20] -->
-    <string name="gender_female">Female</string>
-
-    <!-- Label for dropdown menu option if the user is unknown [CHAR LIMIT=20] -->
-    <string name="gender_unknown">Unknown</string>
 </resources>

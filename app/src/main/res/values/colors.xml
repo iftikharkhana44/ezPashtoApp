@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#000</color>
-    <color name="colorPrimaryDark">#000</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="white">#FFffff</color>
-    <color name="background">#fcfcfc</color>
-    <color name="lightgray">#ededed</color>
+    <color name="colorPrimary">#8bc34a</color>
+    <color name="colorPrimaryDark">#599014</color>
+    <color name="colorAccent">#ffff00</color>
+    <color name="coloPrimaryLight">#bdf478</color>
 
-    <!-- Dark Text Color for Light Background -->
-    <color name="textDarkPrimary">#DE000000</color> <!--DE for %87 opacity-->
-    <color name="textDarkSecondary">#8A000000</color> <!--8A for %54 opacity-->
-    <color name="textDarkDisabled">#61000000</color> <!--61 for %38 opacity-->
 
-    <!-- White Text Color for Dark Background -->
-    <color name="textLightPrimary">#FFFFFF</color> <!--%100 opacity-->
-    <color name="textLightSecondary">#B2FFFFFF</color> <!--B2 for %70 opacity-->
-    <color name="textLightDisabled">#80FFFFFF</color> <!--80 for %50 opacity-->
-    <color name="textLightDisabledDEPRECATED">#4CFFFFFF</color> <!--4C for %30 opacity-->
+    <!-- colour white -->
+    <color name="white">#fff</color>
 
+    <!-- colour black -->
+    <color name="black">#000</color>
+
+    <!-- colour black -->
+    <color name="yellow">#f4eb49</color>
 
     <!-- Background color for the numbers category -->
     <color name="category_numbers">#55b48c</color>
@@ -67,7 +63,9 @@
     <!-- Background color for the Hard words category -->
     <color name="category_hard_words">#d757f6</color>
 
-    <color name="play_background">#ffc299</color>
+    <!--  color for answer button text -->
+    <color name="darkGreen">#705e08</color>
 
-    <color name="play_button_background">#e65c00</color>
+
+
 </resources>

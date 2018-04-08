@@ -6,20 +6,224 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <!-- Styles for button on main_screen -->
-    <style name="button_style">
-        <item name="android:layout_width">300dp</item>
-        <item name="android:layout_height">82dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/mybutton</item>
-        <item name="android:textSize">38sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#fff</item>
-    </style>
 
+    <!-- Main screen styles start here -->
+    <!-- Styles for button -->
+    <style name="button_style">
+        <item name="android:layout_width">290dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/buttonstyle2</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/darkGreen</item>
+    </style>
+    <!-- App name on main screen style -->
+    <style name="image_style">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <!-- Main screen styles end here -->
+
+
+    <!-- activity_category styles start here -->
+    <!-- Style of main LinearLayout -->
+    <style name="linear_layout_category_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">20dp</item>
+    </style>
+    <!-- Style of Category title of activity_category -->
+    <style name="title_category">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Style of category buttons LinearLayout -->
+    <style name="category_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+    <!-- Style Right category buttons -->
+    <style name="category_Right_button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <!-- Style Left category buttons -->
+    <style name="category_Left_button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <!-- Style category names -->
+    <style name="category_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- activity_category styles end here -->
+
+
+    <!-- activity_play styles start here -->
+    <!-- Style of the button inside the play screen -->
+    <style name="playMenuButtons">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/buttonstyle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#a46d08</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <!-- Style of the "Quiz" image -->
+    <style name="quizStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/quizname</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <!-- activity_play styles ends here -->
+
+
+    <!-- QuizActivity styles start here -->
+    <!-- Question count label and lives label style -->
+    <style name="qCountAndLcountsLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Question text view style -->
+    <style name="questionLabel">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/questiontextviewstyle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">Question</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <!-- quiz answer button styles -->
+    <style name="answerButton">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/answerbuttonstyle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="android:text">Answer</item>
+    </style>
+    <!-- QuizActivity styles ends here -->
+
+
+    <!-- Result activity styles starts here -->
+    <!-- Score header label style -->
+    <style name="scoreLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Score</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- score result label -->
+    <style name="resultLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Result label</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+    <!-- Results activity button style -->
+    <style name="resultButton">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/buttonstyle2</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!-- Result activity styles ends here -->
+
+    <!-- list_item styles starts here -->
+    <!-- style of the image view for the word picture -->
+    <style name="image">
+        <item name="android:layout_height">82dp</item>
+        <item name="android:layout_width">82dp</item>
+    </style>
+    <!-- TextView of Pashto word and English -->
+    <style name="textViewWords">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- audio button style -->
+    <style name="audioStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:src">@drawable/play_circle</item>
+    </style>
+    <!-- LinearLayout style in list view -->
+    <style name="textContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">84dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toRightOf">@+id/image</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+    <!-- RelativeLayout style -->
+    <style name="listStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">84dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- list_item styles ends here -->
 </resources>

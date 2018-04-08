@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word>{
 
+    //field
     private int backgroundColour;
 
     public WordAdapter(Activity context, ArrayList<Word> words, int bBackgroundColour){

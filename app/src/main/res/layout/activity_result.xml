@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,43 +7,19 @@
     tools:context="com.finalyearproject.learnpashto.ResultActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/quizbackground">
+    android:background="@color/coloPrimaryLight">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Score"
-        android:layout_marginTop="50dp"
-        android:textSize="40sp"
-        android:textAppearance="?android:textAppearanceInverse"/>
-
-        <TextView
-            android:id="@+id/resultLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="40sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="40dp"
-            android:textColor="#888f01"/>
+        style="@style/scoreLabel"/>
+    <TextView
+        android:id="@+id/resultLabel"
+        style="@style/resultLabel" />
     <Button
         android:id="@+id/again"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
         android:text="Try Again"
-        android:textSize="30sp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/buttonstyle2"
-        android:textColor="#705e08"/>
-
+        style="@style/resultButton"/>
     <Button
         android:id="@+id/learnQuiz"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
         android:text="Learn"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/buttonstyle2"
-        android:textColor="#705e08"/>
-
+        style="@style/resultButton"/>
 </LinearLayout>
