@@ -14,6 +14,21 @@
     <TextView
         android:id="@+id/resultLabel"
         style="@style/resultLabel" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/editText"
+            style="@style/NameEditText"
+            android:hint="Enter name"
+            android:background="@color/white"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="Save"
+            style="@style/saveButton" />
+    </LinearLayout>
     <Button
         android:id="@+id/again"
         android:text="Try Again"

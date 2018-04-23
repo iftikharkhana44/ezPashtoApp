@@ -5,6 +5,11 @@
     <string name="learning">Learning Categories</string>
     <!-- Learning quiz result label -->
     <string name="quizResult">Quiz Results</string>
+    <!-- Quiz instructions label -->
+    <string name="quizInstruction">Quiz Instruction</string>
+    <!-- Score Table Activity label -->
+    <string name="scoreTable">Score Board</string>
+
 
     <!--Title for play button -->
     <string name="play_button">Play</string>
@@ -32,4 +37,10 @@
 
     <!-- Title for category Body title -->
     <string name="title_body">Body</string>
+
+    <!-- Title for category Family title -->
+    <string name="title_family">Family</string>
+
+    <!-- Title for category Days title -->
+    <string name="title_days">Days</string>
 </resources>

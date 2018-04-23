@@ -73,20 +73,20 @@ public class AnimalsCategoryActivity extends AppCompatActivity {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Horse", "Aas", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Dog", "Spey", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Cat", "Peesho", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Pigeon", "Kawtara", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Monkey", "Shaado", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Lion", "Zmarey", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Elephant", "Hathi", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Fox", "Giddr", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Donkey", "Khar", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Chicken", "Charga", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Ant", "Megey", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Sheep", "Gadda", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Snake", "Maar", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Duck", "Batakha", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Horse", "Aas", R.drawable.horse, R.raw.horse));
+        words.add(new Word("Dog", "Spey", R.drawable.dog, R.raw.dog));
+        words.add(new Word("Cat", "Peesho", R.drawable.comingsoon, R.raw.cat));
+        words.add(new Word("Pigeon", "Kawtara", R.drawable.pigeon, R.raw.pigeon));
+        words.add(new Word("Monkey", "Shaado", R.drawable.monkey, R.raw.monkey));
+        words.add(new Word("Lion", "Zmarey", R.drawable.lion, R.raw.lion));
+        words.add(new Word("Elephant", "Hathi", R.drawable.elephant, R.raw.elephant));
+        words.add(new Word("Fox", "Giddr", R.drawable.comingsoon, R.raw.fox));
+        words.add(new Word("Donkey", "Khar", R.drawable.comingsoon, R.raw.donkey));
+        words.add(new Word("Chicken", "Charga", R.drawable.chicken, R.raw.chicken));
+        words.add(new Word("Ant", "Megey", R.drawable.comingsoon, R.raw.ant));
+        words.add(new Word("Sheep", "Gadda", R.drawable.sheep, R.raw.sheep));
+        words.add(new Word("Snake", "Maar", R.drawable.comingsoon, R.raw.snake));
+        words.add(new Word("Duck", "Batakha", R.drawable.comingsoon, R.raw.duck));
 
         WordAdapter adapter = new WordAdapter(this, words, R.color.category_animal);
 

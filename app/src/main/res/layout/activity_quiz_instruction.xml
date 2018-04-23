@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finalyearproject.learnpashto.quizInstructionActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rules"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="- Answer as many questions as you can."
+            android:textColor="@color/darkGreen"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/darkGreen"
+            android:text="- You have three lives, getting three questions wrong will end the quiz."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/darkGreen"
+            android:text="- Questions are formed from multiple different learning categories."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/darkGreen"
+            android:text="- Answer for the questions will be either in Pashto or English."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/darkGreen"
+            android:text="- At the end of the quiz score will be shown with, you may choose try again, learn the material again. "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/darkGreen"
+            android:text="- Save your score at the of the quiz by entering you name. "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/darkGreen"
+            android:text="- Save your score at the of the quiz by entering you name. "
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

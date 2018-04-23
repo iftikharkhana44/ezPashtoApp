@@ -5,7 +5,7 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.finalyearproject.learnpashto.Splash"
+    tools:context="com.finalyearproject.learnpashto.SplashActivity"
     android:background="@color/coloPrimaryLight"
     android:gravity="center">
 

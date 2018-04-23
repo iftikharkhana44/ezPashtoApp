@@ -72,20 +72,20 @@ public class BodyPartsCategoryActivity extends AppCompatActivity{
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Hair", "Wekhta", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Head", "Sar", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("For-head", "Tandday", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Eyebrows", "Banra", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Eye", "Stargay", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Ears", "Ghwag", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Nose", "Poza", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Lips", "Shunday", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Mouth", "Khula", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Teeth", "Ghakhuna", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Tongue", "JABA", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Chin", "Zanay", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Hand", "Las", R.drawable.comingsoon, R.raw.ten));
-        words.add(new Word("Chest", "Sina", R.drawable.comingsoon, R.raw.ten));
+        words.add(new Word("Hair", "Wekhta", R.drawable.hair, R.raw.audio_comingsoon));
+        words.add(new Word("Head", "Sar", R.drawable.head, R.raw.audio_comingsoon));
+        words.add(new Word("Forehead", "Tandday", R.drawable.forehead, R.raw.audio_comingsoon));
+        words.add(new Word("Eyebrows", "wrizi", R.drawable.eyebrows, R.raw.audio_comingsoon));
+        words.add(new Word("Eye", "Stargay", R.drawable.eyes, R.raw.audio_comingsoon));
+        words.add(new Word("Ears", "Ghwag", R.drawable.ears, R.raw.audio_comingsoon));
+        words.add(new Word("Nose", "Poza", R.drawable.nose, R.raw.audio_comingsoon));
+        words.add(new Word("Lips", "Shunday", R.drawable.lips, R.raw.audio_comingsoon));
+        words.add(new Word("Mouth", "Khula", R.drawable.mouth, R.raw.audio_comingsoon));
+        words.add(new Word("Teeth", "Ghakhuna", R.drawable.teeth, R.raw.audio_comingsoon));
+        words.add(new Word("Tongue", "Jaba", R.drawable.tongue, R.raw.audio_comingsoon));
+        words.add(new Word("Chin", "Zanay", R.drawable.chin, R.raw.audio_comingsoon));
+        words.add(new Word("Hand", "Las", R.drawable.hand, R.raw.audio_comingsoon));
+        words.add(new Word("Chest", "Sina", R.drawable.chest, R.raw.audio_comingsoon));
 
         WordAdapter adapter = new WordAdapter(this, words, R.color.category_body_parts);
 

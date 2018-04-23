@@ -84,6 +84,30 @@ tools:context="com.finalyearproject.learnpashto.CategoryActivity">
                 style="@style/category_name"
                 android:text="@string/title_music"/>
         </LinearLayout>
+        <!-- Third row of categories -->
+        <LinearLayout
+            style="@style/category_layout">
+            <Button
+                android:id="@+id/family"
+                android:background="@drawable/family_activity"
+                style="@style/category_Right_button"/>
+            <Button
+                android:id="@+id/days"
+                android:background="@drawable/days_activity"
+                style="@style/category_Left_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_family" />
+            <TextView
+                style="@style/category_name"
+                android:text="@string/title_days"/>
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

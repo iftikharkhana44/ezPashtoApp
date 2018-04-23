@@ -10,12 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Splash"
+            android:name=".SplashActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeFullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,62 +26,61 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".PlayActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:label="@string/play_button"/>
+            android:label="@string/play_button"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".NumbersCategoryActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
             android:label="@string/title_numbers"
-            android:theme="@style/NumbersActivityTheme"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/NumbersActivityTheme" />
         <activity
             android:name=".ColoursCategoryActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
             android:label="@string/title_colours"
-            android:theme="@style/ColoursActivityTheme"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/ColoursActivityTheme" />
         <activity
             android:name=".DaysCategoryActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="@string/title_days"
+            android:theme="@style/daysActivityTheme"/>
         <activity
             android:name=".FoodCategoryActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
             android:label="@string/title_food"
-            android:theme="@style/FoodActivityTheme"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/FoodActivityTheme" />
         <activity
             android:name=".AnimalsCategoryActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
             android:label="@string/title_animals"
-            android:theme="@style/AnimalsActivityTheme"/>
-        <activity
-            android:name=".TransportationCategoryActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimalsActivityTheme" />
         <activity
             android:name=".BodyPartsCategoryActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
             android:label="@string/title_body"
-            android:theme="@style/BodyActivityTheme"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/BodyActivityTheme" />
         <activity
             android:name=".QuizActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:label=""/>
+            android:label=""
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResultActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:label="@string/quizResult"/>
+            android:label="@string/quizResult"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AlphabetsCategoryActivity"
             android:configChanges="orientation"
@@ -89,8 +89,22 @@
         <activity
             android:name=".CategoryActivity"
             android:configChanges="orientation"
+            android:label="@string/learning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scoreboardActivity"
+            android:label="@string/scoreTable"
             android:screenOrientation="portrait"
-            android:label="@string/learning"/>
+            android:configChanges="orientation"/>
+        <activity
+            android:name=".FamilyCategoryActivity"
+            android:label="@string/title_family"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/FamilyActivityTheme"/>
+        <activity
+            android:name=".quizInstructionActivity"
+            android:label="@string/quizInstruction">
+        </activity>
     </application>
-
 </manifest>

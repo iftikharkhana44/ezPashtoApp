@@ -48,14 +48,11 @@
     <!-- Background color for the clothes category -->
     <color name="category_clothes">#3b1d8f</color>
 
-    <!-- Background color for the phrases category -->
-    <color name="category_phrases">#ff3823</color>
+    <!-- Background color for the family category -->
+    <color name="category_family">#f29c2f</color>
 
     <!-- Background color for the Vocabulary category -->
     <color name="category_vocabulary">#ffd783</color>
-
-    <!-- Background color for the Family category -->
-    <color name="category_family">#b70f0a</color>
 
     <!-- Background color for the Conversation category -->
     <color name="category_conversation">#4c7a34</color>
@@ -66,6 +63,7 @@
     <!--  color for answer button text -->
     <color name="darkGreen">#705e08</color>
 
-
+    <!-- Background color for the Days category -->
+    <color name="category_days">#499bd5</color>
 
 </resources>

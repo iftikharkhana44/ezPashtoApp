@@ -9,19 +9,37 @@ import android.widget.Button;
 
 public class PlayActivity extends AppCompatActivity {
 
-    Button quiz;
+    Button quiz, scoreboard, instructions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
+        scoreboard = (Button) findViewById(R.id.score);
         quiz = (Button) findViewById(R.id.quiz);
+        instructions = (Button) findViewById(R.id.instruction);
+
+
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent quiz_Intent = new Intent(PlayActivity.this, QuizActivity.class);
                 startActivity(quiz_Intent);
+            }
+        });
+        scoreboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent score_Intent = new Intent(PlayActivity.this, scoreboardActivity.class);
+                startActivity(score_Intent);
+            }
+        });
+        instructions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent instructions_Intent = new Intent(PlayActivity.this, quizInstructionActivity.class);
+                startActivity(instructions_Intent);
             }
         });
 

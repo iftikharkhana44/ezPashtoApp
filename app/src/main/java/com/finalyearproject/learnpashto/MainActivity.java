@@ -14,14 +14,18 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Fields
+    private Button learn;
+    private Button play;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //here we find the views which show the play and learn options on the main screen
-        Button learn = (Button) findViewById(R.id.btnlearn);
-        final Button play = (Button) findViewById(R.id.btnplay);
+        learn = (Button) findViewById(R.id.btnlearn);
+        play = (Button) findViewById(R.id.btnplay);
 
         learn.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Learn View is clicked on.

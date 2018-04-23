@@ -23,6 +23,8 @@ public class CategoryActivity extends AppCompatActivity {
         Button animals = (Button) findViewById(R.id.animals);
         Button body = (Button) findViewById(R.id.body);
         Button alphabets = (Button) findViewById(R.id.alphabets);
+        Button family = (Button) findViewById(R.id.family);
+        Button days = (Button) findViewById(R.id.days);
 
         numbers.setOnClickListener(new View.OnClickListener() {
 
@@ -77,6 +79,25 @@ public class CategoryActivity extends AppCompatActivity {
                 startActivity(alphabets_Intent);
             }
         });
+
+        family.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent family_Intent = new Intent(CategoryActivity.this, FamilyCategoryActivity.class);
+                startActivity(family_Intent);
+            }
+        });
+
+        days.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent days_Intent = new Intent(CategoryActivity.this, DaysCategoryActivity.class);
+                startActivity(days_Intent);
+            }
+        });
+
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

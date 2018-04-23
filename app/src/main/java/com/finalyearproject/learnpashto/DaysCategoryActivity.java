@@ -6,6 +6,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -71,23 +72,24 @@ public class DaysCategoryActivity extends AppCompatActivity {
 
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Day", "Wraz",R.raw.day ));
-        words.add(new Word("Today","Nen", R.raw.today));
-        words.add(new Word("Yesterday","Parun", R.raw.yesterday));
-        words.add(new Word("Tomorrow","Sabaa", R.raw.tomorrow));
-        words.add(new Word("Day after tomorrow","saba na Bel sa-baa", R.raw.day_after_tomorrow));
-        words.add(new Word("Next week","bala haafta", R.raw.next_week));
-        words.add(new Word("This week","Da haapta", R.raw.this_week));
-        words.add(new Word("last week","Tera shawey haafta ", R.raw.last_week));
-        words.add(new Word("Monday","Naswari", R.raw.ten));
-        words.add(new Word("Tuesday","Naswari", R.raw.ten));
-        words.add(new Word("Wednesday","Charshamba", R.raw.wednesday));
-        words.add(new Word("Thursday","Ziarat", R.raw.thursday));
-        words.add(new Word("Friday","Jumma", R.raw.friday));
-        words.add(new Word("Saturday","Khali", R.raw.saturday));
-        words.add(new Word("Sunday","Atwar", R.raw.sunday));
+        words.add(new Word("day", "Wraz",R.raw.wraz ));
+        words.add(new Word("night", "Shpa",R.raw.shpa ));
+        words.add(new Word("today","Nan", R.raw.nan));
+        words.add(new Word("yesterday","Parun", R.raw.parun));
+        words.add(new Word("tomorrow","Sabaa", R.raw.saba));
+        words.add(new Word("day after Tomorrow","saba na Bel sa-baa", R.raw.saba_na_bal_saba));
+        words.add(new Word("next week","Bala haafta", R.raw.bala_hafta));
+        words.add(new Word("this week","Da haapta", R.raw.da_hafta));
+        words.add(new Word("last week","Tera shawey haafta ", R.raw.tera_shawey_hafta));
+        words.add(new Word("Monday","Pir", R.raw.pir));
+        words.add(new Word("Tuesday","Mangal", R.raw.mangal));
+        words.add(new Word("Wednesday","Charshamba", R.raw.charshamba));
+        words.add(new Word("Thursday","Ziarat", R.raw.zyrat));
+        words.add(new Word("Friday","Jumma", R.raw.juma));
+        words.add(new Word("Saturday","Khali", R.raw.khali));
+        words.add(new Word("Sunday","atwar", R.raw.atwar));
 
-        WordAdapter adapter = new WordAdapter(this, words, R.color.white);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_days);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -125,6 +127,16 @@ public class DaysCategoryActivity extends AppCompatActivity {
                 }
             }
         });
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    @Override
+    public  boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
