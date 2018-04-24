@@ -29,7 +29,7 @@ public class QuizActivity extends AppCompatActivity {
     private int quizCount = 1;
     private int lives = 3;
 
-    public int QUIZ_COUNT = quizCount;
+    public int QUIZ_COUNT = 30;
     private int LIVES = 0;
 
 
